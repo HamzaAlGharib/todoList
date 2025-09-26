@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="ToDo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📝 My To-Do List</h1>
+      <div class="miniCt">
+        <form id="task-form">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="Add a new task..."
+            autocomplete="off"
+          />
+          <div id="mainAlert">
+          <span id="AlertIcon">⚠</span><p id="inputAlert"></p>
+          </div>
+          <input
+            type="text"
+            id="taskInputSub"
+            placeholder="Add task subtitle..."
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            id="taskInputDesc"
+            placeholder="Add task description..."
+            autocomplete="off"
+          />
+        </form>
+        <!-- <button type="submit" onclick="add(event)">Add</button> -->
+        
+          <button id="btnAdd" type="submit" form="task-form">Add</button>
+        
+        <div id="edit-buttons" style="display: none">
+          <button id="btnUpdate">Update</button>
+          <button id="btnCancel">Cancel</button>
+        </div>
+      </div>
+
+        <ul id="task-list">
+        <div id="divList">
+          <!-- Tasks will appear here -->
+        </div>
+      </ul>
+    </div>
+
+    <script src="ToDo.js"></script>
+  </body>
+</html>
