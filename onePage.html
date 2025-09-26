@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link rel="stylesheet" href="onePage.css">
+  </head>
+  <body>
+    <div class="container" id="container1" >
+      <h1>📝 My To-Do List</h1>
+      <div id="miniCt1">
+        <div class="alignButton">
+          <h2 id="status">No ToDo's</h2>
+          <button id="navigateAdd">+</button>
+        </div>
+
+        <ul id="task-list">
+          <div id="divList">
+            <!-- Tasks will appear here -->
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="container" id="container2" style="display: none;" >            
+      <h1>📝 Add ToDo</h1>
+      <div class="miniCt2">
+        <form id="task-form">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="Add a new task..."
+            autocomplete="off"
+          />
+          <div id="mainAlert1">
+          <span id="AlertIcon1">⚠</span><p id="inputAlert1"></p>
+          </div>
+          <input
+            type="text"
+            id="taskInputSub"
+            placeholder="Add task subtitle..."
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            id="taskInputDesc"
+            placeholder="Add task description..."
+            autocomplete="off"
+          />
+        </form>
+       
+        
+          <button id="btnAdd" type="submit" form="task-form">Add</button>
+        
+        <div id="edit-buttons" style="display: none">
+          <button id="btnUpdate" onclick="updateTask()">Update</button>
+          <button id="btnCancel">Cancel</button>
+        </div>
+      </div>
+
+        <ul id="task-list">
+        <div id="divList">
+          <!-- Tasks will appear here -->
+        </div>
+      </ul>
+      <div id="toast">
+  Added successfully!
+</div>
+    </div>
+     <div class="container"id="container3" style="display: none;" >
+      <h1>📝 Edit ToDo</h1>
+      <div class="miniCt3" >
+        <div id="task-form">
+          <input
+            type="text"
+            id="taskInputEdit"
+            placeholder="Edit task name..."
+            autocomplete="off"
+          />
+          <div id="mainAlert2">
+          <span id="AlertIcon2">⚠</span><p id="inputAlert2"></p>
+          </div>
+          <input
+            type="text"
+            id="taskInputSubEdit"
+            placeholder="Edit task subtitle..."
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            id="taskInputDescEdit"
+            placeholder="Edit task description..."
+            autocomplete="off"
+          />
+        <div>
+        
+        
+        <div id="edit-buttons" >
+          <button id="btnUpdate" onclick="updateTask()">Update</button>
+          <button id="btnCancel" onclick="cancel()">Cancel</button>
+        </div>
+      </div>
+     </div>
+     <div id="toast">
+       Edited successfully!
+      </div>
+      </div>
+     </div>
+     <script src="onePage.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  
+}
+.container {
+  margin-bottom: 5rem;
+  display: block;
+  margin-top: 10rem;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  height: max-content;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.container h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+#navigateAdd{
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: #4caf50;
+    font-size: 30px;
+    border: none;
+    border-radius: 8px;
+     cursor: pointer;
+     margin: 5px -10px 20px 90px ;
+}
+#miniCt1{
+    display: flex;
+    flex-direction: column;
+
+}
+.alignButton{
+  display: flex;
+}
+.alignButton h2{
+  text-wrap: nowrap;
+  padding-right: 20px;
+    padding-top: 7px;
+    color: black;
+    font-size: 35px;
+    text-decoration: underline;
+}
+/****************************************************************************************************************/
+#task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+
+  border-radius: 8px;
+}
+#taskInputSub {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+#taskInputDesc {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+.miniCt2{
+  display: flex;
+}
+
+.miniCt2 button {
+  padding: 10px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  height: 60px;
+  width: 80px;
+  margin-left: 20px;
+  margin-top: 15%;
+  text-align: center;
+  
+}
+#inputAlert1{
+  font-size: 12px;
+  padding: 0px ;
+  margin: -6px 0px 0px 0px;
+  font-weight: 450;
+  color: #d93025;
+  text-wrap: nowrap;
+}
+#AlertIcon1{
+  padding: 0px 7px;
+  margin: -6px 0px 0px 0px;
+  font-weight: bold;
+  color: #d93025;          
+  display: none;
+  font-size: 12px;
+}
+#mainAlert1{
+  display: flex;
+}
+#inputAlert2{
+  font-size: 12px;
+  padding: 0px ;
+  margin: -6px 0px 0px 0px;
+  font-weight: 450;
+  color: #d93025;
+  text-wrap: nowrap;
+}
+#AlertIcon2{
+  padding: 0px 7px;
+  margin: -6px 0px 0px 0px;
+  font-weight: bold;
+  color: #d93025;          
+  display: none;
+  font-size: 12px;
+}
+#mainAlert2{
+  display: flex;
+}
+
+
+
+#taskInput.error {
+  border-color: #d93025;
+}
+
+#taskInput.error:focus {
+  border-color: #d93025;
+  box-shadow: 0 0 0 3px rgba(217,48,37,0.15);
+  outline: none;
+}
+#toast{
+    
+  position: fixed;
+  top: 50%;          
+  left: 50%;         
+  transform: translate(-50%, -50%); 
+  
+  background: #45a049;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  
+  z-index: 9999;   
+  opacity: 0;        
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+.miniCt3 button {
+  padding: 10px 16px;
+  background-color: #4caf50;
+  
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  height: 60px;
+  width: 80px;
+  margin-left: 20px;
+  margin-top: 15%;
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+#edit-buttons{
+    display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+#task-form button:hover {
+  background-color: #45a049;
+}
+.task-item {
+  /* display: flex; */
+  position: relative;
+  background: #fafafa;
+  padding: 12px;
+  border: 1px solid  #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  justify-content: space-between; 
+  align-items: center;
+  margin-right: 30px;
+  width: 350px;
+  
+}
+#task-list {
+  list-style: none;
+}
+
+#hidden{
+  display: none;
+}
+.edit{
+
+  top: 5px; 
+  right: 5px;
+  height: 25px;
+  width: 60px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  /* background-color: #3b82f6; */
+ background-color: rgba(128, 128, 128, 0.521);
+  /* color: white; */
+  color: black;
+  border-radius: 5px;
+  position: absolute;
+}
+.delete{
+
+  bottom: 5px;
+  right: 5px; 
+  width: 60px;
+  height: 25px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  
+  background-color: rgba(128, 128, 128, 0.521);
+  /* background-color: #ef4444; */
+  /* color: #fff; */
+  color: black;
+  border-radius: 5px;
+  position: absolute;
+  transition: background-color 0.3s ease;
+  
+}
+#taskInputEdit {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+
+  border-radius: 8px;
+}
+#taskInputSubEdit {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+#taskInputDescEdit {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
