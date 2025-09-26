@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  /* align-items: center; */
+}
+.container {
+  margin-bottom: 5rem;
+  display: block;
+  margin-top: 10rem;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  height: max-content;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+#task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  /* border-color: red; */
+  border-radius: 8px;
+}
+#taskInputSub {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+#taskInputDesc {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+
+.miniCt button {
+  padding: 10px 16px;
+  background-color: #4caf50;
+  
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  height: 60px;
+  width: 80px;
+  margin-left: 20px;
+  margin-top: 15%;
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+#edit-buttons{
+    display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+#task-form button:hover {
+  background-color: #45a049;
+}
+
+#inputAlert{
+  font-size: 12px;
+  padding: 0px ;
+  margin: -6px 0px 0px 0px;
+  font-weight: 450;
+  color: #d93025;
+  text-wrap: nowrap;
+}
+#AlertIcon{
+  padding: 0px 7px;
+  margin: -6px 0px 0px 0px;
+  font-weight: bold;
+  color: #d93025;          
+  display: none;
+  font-size: 12px;
+}
+#mainAlert{
+  display: flex;
+}
+#taskInput.error {
+  border-color: #d93025;
+}
+
+#taskInput.error:focus {
+  border-color: #d93025;
+  box-shadow: 0 0 0 3px rgba(217,48,37,0.15);
+  outline: none;
+}
+#hidden{
+  display: none;
+}
+#toast{
+    
+  position: fixed;
+  top: 50%;          
+  left: 50%;         
+  transform: translate(-50%, -50%); 
+  
+  background: #45a049;
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  
+  z-index: 9999;   
+  opacity: 0;        
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+

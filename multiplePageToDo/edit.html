@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit ToDo</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+     <div class="container">
+      <h1>📝 Edit ToDo</h1>
+      <div class="miniCt">
+        <div id="task-form">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="Edit task name..."
+            autocomplete="off"
+          />
+          <div id="mainAlert">
+          <span id="AlertIcon">⚠</span><p id="inputAlert"></p>
+          </div>
+          <input
+            type="text"
+            id="taskInputSub"
+            placeholder="Edit task subtitle..."
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            id="taskInputDesc"
+            placeholder="Edit task description..."
+            autocomplete="off"
+          />
+        <div>
+        
+        
+        <div id="edit-buttons" >
+          <button id="btnUpdate">Update</button>
+          <button id="btnCancel">Cancel</button>
+        </div>
+      </div>
+     </div>
+     <div id="toast">
+       Edited successfully!
+      </div>
+      </div>
+     </div>
+     <script src="edit.js"></script>
+    
+</body>
+</html>
